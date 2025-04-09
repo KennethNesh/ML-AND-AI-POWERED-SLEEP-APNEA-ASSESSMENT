@@ -10,7 +10,7 @@ app = Flask(__name__)
 model = load_model('sleep_apnea_model1.h5')
 
 # Configure Gemini API
-GEMINI_API_KEY = "AIzaSyAmx6bOG7QLzrS31x6HNn1g8QUtPHjGpH0"
+GEMINI_API_KEY = ""
 genai.configure(api_key=GEMINI_API_KEY)
 model_gemini = genai.GenerativeModel("models/gemini-1.5-flash-latest")
 
